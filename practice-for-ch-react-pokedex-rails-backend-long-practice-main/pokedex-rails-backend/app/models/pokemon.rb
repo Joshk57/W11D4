@@ -14,6 +14,7 @@
 #  updated_at :datetime         not null
 #
 class Pokemon < ApplicationRecord
+
     TYPES = [
         'fire',
         'electric',
@@ -51,4 +52,6 @@ class Pokemon < ApplicationRecord
 
     has_many :items,
         dependent: :destroy
+
+  
 end
